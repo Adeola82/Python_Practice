@@ -1,0 +1,387 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOysnlYPQ8ZhRi3sFymXWJA",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Adeola82/Python_Practice/blob/main/Practice%20Code\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "PCFTgd8dOdIN"
+      },
+      "outputs": [],
+      "source": [
+        "Question 1: A store sells apples at $5 each and bananas at $3 each. Declare variables apples_price and bananas_price with appropriate values.\n",
+        "Calculate the total cost for purchasing 10 apples and 7 bananas and store the result in total_cost."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "apples_price = 5\n",
+        "banana_price = 3\n",
+        "total_cost = (10*5) + (7*3)\n",
+        "print(f\"${total_cost}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iiPhrYf4hRI_",
+        "outputId": "2830c5fd-8099-4039-9fc2-850bc90b276d"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "$71\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 2: You have a monthly salary of $4,000 and expenses that include rent ($1,200), groceries ($300), and miscellaneous ($500). Calculate the amount left after expenses and store it in a variable named remaining_balance."
+      ],
+      "metadata": {
+        "id": "I4k1bYSFiUU_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "monthly_salary = 4000\n",
+        "rent = 1200\n",
+        "groceries = 300\n",
+        "miscellaneous = 500\n",
+        "remaining_balance = monthly_salary - rent - groceries - miscellaneous\n",
+        "print(f\"${remaining_balance}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tupadqIDigvi",
+        "outputId": "ac6555fb-9640-4334-da00-f0f51b529b0b"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "$2000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 3: A team won 28 matches this season, and last season they won 18 matches. Declare variables current_season_wins and last_season_wins with respective values. Calculate the increase in matches won and store it in win_difference."
+      ],
+      "metadata": {
+        "id": "8bkxPcfdjHWB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "current_season_wins = 28\n",
+        "last_season_wins = 18\n",
+        "win_difference = current_season_wins - last_season_wins\n",
+        "print(win_difference)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VI_u9CUhjQjT",
+        "outputId": "6c9dbe52-adf9-4dae-9c99-ecef3e7a3d35"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 4: A travel company charges $250  per  person for a weekend trip and gives a $100 group discount for every 5 people. If a group has 15 people Calculate the total cost for the group and store it in group_trip_cost.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "lWEBfjTije21"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "charge_per_person = 250\n",
+        "discount_per_group_of_5 = 100\n",
+        "group_trip_cost = (250*15) - ((15/5)* 100)\n",
+        "print(f\"${int(group_trip_cost)}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vlySuWEamtnz",
+        "outputId": "de1b5667-6794-4cfd-f3db-0f4ea7454ffd"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "$3450\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 5: An item costs $120, and there is a discount of 15%. Calculate the final price after the discount and store it in discounted_price."
+      ],
+      "metadata": {
+        "id": "KDqvwKnOpCiX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "item_cost = 120\n",
+        "discount = 0.15\n",
+        "discounted_price = 120 - (0.15*120)\n",
+        "print(f\"${discounted_price}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "C5iqkYqlpeFu",
+        "outputId": "95c57bd7-55ef-4eb2-d12c-7fd8ad09349b"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "$102.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "A company produces 500 units daily and sells each unit for $20. Declare variables units_per_day and price_per_unit. Calculate the monthly revenue assuming a 30-day month and store it in monthly_revenue."
+      ],
+      "metadata": {
+        "id": "7H6tf_9EqFP9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "unit_per_day = 500\n",
+        "price_per_unit = 20\n",
+        "monthly_revenue = (500*20*30)\n",
+        "print(f\"${monthly_revenue}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "g_mOE070qNm3",
+        "outputId": "b6ffe9c1-cb02-49df-e287-4cb5b2783462"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "$300000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 7: A farmer grows wheat on a 150-acre farm and yields 3,000 kg per acre. Declare variables acreage and yield_per_acre. Calculate the total wheat production and store it in total_production."
+      ],
+      "metadata": {
+        "id": "eNqnjI-iqr_W"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "acreage = 150\n",
+        "yield_per_acre = 3000\n",
+        "total_production = 150*3000\n",
+        "print(total_production)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "deW95K6Jq1Wn",
+        "outputId": "fc390897-ed79-4e9f-dfc1-dba1e37c7c11"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "450000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " A bakery makes $2 profit on each loaf of bread sold. If they sell 200 loaves in a day, declare variables profit_per_loaf and loaves_sold. Calculate the daily profit and store it in daily_profit."
+      ],
+      "metadata": {
+        "id": "tMNVBE8QrKin"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "profit_per_loaf = 2\n",
+        "loaves_sold_per_day = 200\n",
+        "daily_profit = 2*200\n",
+        "print(f\"${daily_profit}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BS4egfZivA9f",
+        "outputId": "8499af46-5610-4988-b620-db44f6f726ed"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "$400\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 9: You are planning an event for 120 attendees. The venue rental is $800, and catering costs $25 per person. Declare variables venue_cost, catering_cost_per_person, and number_of_attendees. Calculate the total cost of the event and store it in event_total_cost."
+      ],
+      "metadata": {
+        "id": "fsq2AxiFvWfb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "venue_cost = 800\n",
+        "catering_per_person = 25\n",
+        "number_of_attendees = 120\n",
+        "total_cost = (25*120) + 800\n",
+        "print(f\"${total_cost}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UNJJaQ2Fvttd",
+        "outputId": "636a1720-c4f3-4e1a-c560-df4da38cd9a4"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "$3800\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Question 10: A school's annual fee per student is $1,500, and they provide a 5% sibling discount. Declare variables annual_fee and sibling_discount_percent. Calculate the discounted fee for one sibling and store it in sibling_discounted_fee.\n"
+      ],
+      "metadata": {
+        "id": "8M1--5l8whan"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "annual_fee = 1500\n",
+        "sibling_discount_percent = 0.05\n",
+        "sibling_discounted_fee = annual_fee - (0.05*annual_fee)\n",
+        "print(f\"{sibling_discounted_fee}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0gVG5oVLwl5R",
+        "outputId": "2cb212ca-6463-471e-b5bc-c832c1ada484"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1425.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
