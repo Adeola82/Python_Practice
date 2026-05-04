@@ -11,7 +11,7 @@ Practice problem-solving and algorithmic thinking
 Build a solid foundation for data engineering and analytics tasks
 Track my learning progress over time
 
-** What You'll Find Here**
+**What You'll Find Here**
 
 This repository includes:
 
